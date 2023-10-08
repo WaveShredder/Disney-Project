@@ -29,7 +29,7 @@ MUSIC_END_EVENT = pygame.USEREVENT + 1
 
 
 # # GitHub API URL for releases of your repository
-# access_token = "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"
+# access_token = "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" -- Removed
 
 # Initialize a flag to track whether the update has been performed
 update_performed = False
@@ -94,10 +94,10 @@ def run_updated_version(updated_exe_path):
         print(f"Error running updated version: {e}")
 
 # Example usage
-current_version = "0.0.2"  # Replace this with your current version
+current_version = "1.0.0"  # Replace this with your current version
 repo_owner = "WaveShredder"
 repo_name = "Disney-Project"
-asset_name = "KingMickey.exe"
+asset_name = "King-Mickey.exe"
 
 check_for_update(current_version, repo_owner, repo_name, asset_name)
 
@@ -108,13 +108,7 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 # pygame.display.set_caption("Positive Thoughts")
 
 # Set the application icon (icon.ico)
-icon_path = os.path.join(base_path, "icon.ico")
-icon = pygame.image.load(icon_path)
-
-# Set the window icon (minnie.ico)
-window_icon_path = os.path.join(base_path, "minnie.ico")
-pygame.display.set_icon(pygame.image.load(window_icon_path))  # Set the custom window icon
-
+icon_path = 'icon.ico'
 
 # Set the application icon
 ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID(icon_path)
