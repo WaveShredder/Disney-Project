@@ -136,7 +136,7 @@ button_font = pygame.font.Font(os.path.join(font_folder, "Zootopia.ttf"), 18)
 
 # Load the background image
 background_folder = os.path.join(base_path, "backdrop")
-background_image = pygame.image.load(os.path.join(background_folder, "pride_rock.jpg"))
+background_image = pygame.image.load(os.path.join(background_folder, "pride_rock edited.jpg"))
 
 # Load the Pride Rock overlay image
 overlay_image = pygame.image.load(os.path.join(background_folder, "pride_rock2.png"))
